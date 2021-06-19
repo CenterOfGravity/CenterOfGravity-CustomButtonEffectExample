@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.App">
+    <Application.Resources>
+
+        <Style  TargetType="StackLayout">
+            <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding  Light=white ,Dark=black}" />
+        </Style>
+
+        <Style  TargetType="Label">
+            <Setter Property="TextColor"
+                Value="{AppThemeBinding Light=black ,Dark=white}" />
+        </Style>
+
+        <Style  TargetType="Button">
+            <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light=gray ,Dark= white}" />
+            <Setter Property="TextColor"
+                Value="{AppThemeBinding Light=white ,Dark= black}" />
+        </Style>
+    </Application.Resources>
+</Application>

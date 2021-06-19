@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.View.SecondPageView"
+             xmlns:local="clr-namespace:App1.Effects">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="counter" Text="0" HorizontalTextAlignment="Center" FontSize="30" />
+            <Button x:Name="ButtonRegresar" Text="Press Me" CornerRadius="50" Margin="10,0,10,0"  Pressed="ButtonRegresar_Pressed" Released="ButtonRegresar_Released">
+              <Button.Effects>
+                <local:SpecialButtonEffect/>
+              </Button.Effects>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
